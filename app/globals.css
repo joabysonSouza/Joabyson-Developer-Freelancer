@@ -16,18 +16,22 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+*{
+  margin: 0;
+  padding: 0;
+
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+body {
+  width: 100%;
+  height: auto;
+  color: rgb(var(--foreground-rgb));
+ overflow-y: scroll; 
+ overflow-x: hidden;
+ background-color: white;
+  color: white;
+
+}
+p{
+  color: white;
 }

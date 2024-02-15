@@ -1,0 +1,50 @@
+ .menuIcon {
+  font-size: 3rem;
+  justify-content: center;
+  cursor: pointer;
+  display: none;
+  margin: 0;
+  
+}
+.Menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+    font-size: 1.5rem;
+   
+}
+
+.Menu:hover{
+    color: red;
+    transition: all;
+    transition-duration: 300s;
+}
+@media (max-width: 700px) {
+  .Menu {
+    display: none;
+    width: 65%;
+    height: auto;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    left: 100px;
+    flex-direction: column;
+    padding: 25px;
+    gap: 16px;
+    background-color: #f5060663;
+  }
+  .menuIcon {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .Menu {
+    width:76%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+} 
