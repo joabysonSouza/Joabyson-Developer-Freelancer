@@ -19,7 +19,8 @@ export default function WhatDoIDo() {
 
         {/* Cards e imagens */}
 
-        <div className="w-full h-full flex flex-col justify-center items-center md:grid grid-cols-3 place-items-center">
+        <div className="w-full h-full flex flex-col justify-center items-center  md:grid grid-cols-2  place-items-center
+        xl:grid-cols-3">
           <Cards Title="Sites para divugação de produtos fisicos" img={page} />
           <Cards Title="lading pages" img={coffe} />
           <Cards Title="sites pessoais" img={siteProfile} />

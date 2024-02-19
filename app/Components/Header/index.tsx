@@ -23,43 +23,43 @@ export default function Header() {
   return (
     <Element name="Header">
       <header className="text-white text-xl h-52 w-full">
-        <nav className=" flex mx-5 pt-5 ">
+        <nav className=" flex mx-8 pt-5 w-full justify-between">
           <div
-            className="bg-white w-10 h-10 p-4  mr-5  rounded-full flex items-center justify-center 
-        hover:scale-110 transform transition duration-300 sm:w-16 sm:h-16"
+            className="bg-white w-10 h-10 p-7 mr-5  rounded-full flex items-center justify-center 
+        hover:scale-110 transform transition duration-300 sm:w-12 md:p-5 sm:h-12"
           >
             <Link
               href="https://www.linkedin.com/in/joabysonsouza/"
               target="_blank"
             >
-              <FaLinkedin color="black" size={35} />
+              <FaLinkedin color="black" size={30}  />
             </Link>
           </div>
 
           <div
-            className="bg-white w-10 h-10  p-3  mr-5 cursor-pointer rounded-full flex items-center justify-center
-        hover:scale-110 transform transition duration-300 sm:w-16 sm:h-16"
+            className="bg-white w-10 h-10 p-7 mr-5 cursor-pointer rounded-full flex items-center justify-center
+        hover:scale-110 transform transition duration-300 sm:w-12 md:p-5 sm:h-12"
           >
             <Link href="https://github.com/joabysonSouza" target="_blank">
-              <FaGithub color="black" size={35} />
+              <FaGithub color="black" size={30} />
             </Link>
           </div>
 
-          <div className="bg-white w-10 h-10 p-3 mr-5 cursor-pointer  rounded-full flex items-center justify-center hover:scale-110 transform transition duration-300 sm:w-16 sm:h-16">
+          <div className="bg-white w-10 h-10 p-7 mr-5 cursor-pointer  rounded-full flex items-center justify-center hover:scale-110 transform transition duration-300 sm:w-12 md:p-5 sm:h-12">
             <Link
               href="mailto:joabyson916@gmail.com?subject=Olá gostatia de um orçamento"
               target="blank"
             >
-              <MdEmail color="black" size={35} />
+              <MdEmail color="black" size={30} />
             </Link>
           </div>
 
-          <div className="bg-white w-10 h-10 p-3 mr-8 cursor-pointer  rounded-full flex items-center justify-center hover:scale-110 transform transition duration-300 sm:w-16 sm:h-16">
+          <div className="bg-white w-10 h-10 p-7 mr-8 cursor-pointer  rounded-full flex items-center justify-center hover:scale-110 transform transition duration-300 sm:w-12 md:p-5 sm:h-12">
             <Link
               href="https://api.whatsapp.com/send?phone=75982318123"
               target="_blank"
             >
-              <BsFillTelephoneFill color="black" size={35} />
+              <BsFillTelephoneFill color="black" size={30} />
             </Link>
           </div>
 
@@ -70,25 +70,27 @@ export default function Header() {
             className={`${styles.Menu} ${showMenu ? styles.menuIcon : ""}`}
           >
             <ul className="w-full flex flex-col gap-4 md:flex-row justify-around ">
-              <li className="hover:text-red-600 cursor-pointer transition-all duration-300 text-xl xl:text-4xl mx-2 ">
+              <li className="hover:text-red-600 cursor-pointer transition-all duration-300 text-xl xl:text-3xl mx-2 ">
                 Home
               </li>
 
               <LinkScroll smooth={true} to="WhatDoIdo" duration={1500}>
-                <li className="hover:text-red-600 cursor-pointer text-xl xl:text-4xl mx-2 ">
+                <li className="hover:text-red-600 cursor-pointer text-xl xl:text-3xl mx-2 ">
                   O que faço
                 </li>
               </LinkScroll>
 
               <LinkScroll smooth={true} to="About" duration={1500}>
-                <li className="hover:text-red-600 cursor-pointer text-xl xl:text-4xl">
+                <li className="hover:text-red-600 cursor-pointer text-xl xl:text-3xl">
                   Quem sou eu
                 </li>
               </LinkScroll>
             </ul>
           </div>
 
-          <div>
+          {/* Menu sanduiche */}
+
+          <div className=" mr-20 flex justify-end w-96 md:w-0">
             <CiMenuBurger className={styles.menuIcon} onClick={toggleMenu} />
           </div>
         </nav>
